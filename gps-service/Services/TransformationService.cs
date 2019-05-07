@@ -22,7 +22,7 @@
 
                 var collection = Ctx.Positions.Where(x => x.State == StateOf.NotProcessed);
                 if (!collection.Any())
-                    return;
+                    continue;
 
                 foreach (var groups in collection.GroupBy(x => x.SessionID))
                 {
