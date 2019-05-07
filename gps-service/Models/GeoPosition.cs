@@ -2,6 +2,8 @@
 {
     using System;
     using System.ComponentModel.DataAnnotations;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
 
     public class GeoPosition
     {
@@ -22,6 +24,8 @@
         public float Latitude { get; set; }
         public float Longitude { get; set; }
         public string SessionID { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
         public StateOf State { get; set; } = StateOf.NotProcessed;
 
 
