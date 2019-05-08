@@ -5,7 +5,7 @@ Purpose: Takes a pair of two gps coordinates and calculates the distance between
     
 `dotnet publish -r win10-x64`   
 or    
-`dotnet publish -r ubuntu-x64`    
+`dotnet publish -r linux-x64`    
 
 ### Run 🧨
 
